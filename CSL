@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Achados e Perdidos</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        header {
+            background: #007bff;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        h1 {
+            margin: 0;
+        }
+        section {
+            margin: 20px 0;
+            padding: 20px;
+            background: white;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        label {
+            margin: 10px 0 5px;
+        }
+        input, textarea {
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            padding: 10px;
+            background: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Achados e Perdidos</h1>
+    <p>Ajude a encontrar ou devolver itens perdidos!</p>
+</header>
+
+<section>
+    <h2>Cadastrar Item Perdido</h2>
+    <form>
+        <label for="item-perdido">Nome do Item:</label>
+        <input type="text" id="item-perdido" required>
+
+        <label for="descricao-perdido">Descrição:</label>
+        <textarea id="descricao-perdido" rows="4" required></textarea>
+
+        <label for="local-perdido">Local onde foi perdido:</label>
+        <input type="text" id="local-perdido" required>
+
+        <label for="data-perdido">Data em que foi perdido:</label>
+        <input type="date" id="data-perdido" required>
+
+        <label for="contato-perdido">Contato:</label>
+        <input type="text" id="contato-perdido" required>
+
+        <button type="submit">Cadastrar Item Perdido</button>
+    </form>
+</section>
+
+<section>
+    <h2>Cadastrar Item Encontrado</h2>
+    <form>
+        <label for="item-encontrado">Nome do Item:</label>
+        <input type="text" id="item-encontrado" required>
+
+        <label for="descricao-encontrado">Descrição:</label>
+        <textarea id="descricao-encontrado" rows="4" required></textarea>
+
+        <label for="local-encontrado">Local onde foi encontrado:</label>
+        <input type="text" id="local-encontrado" required>
+
+        <label for="data-encontrado">Data em que foi encontrado:</label>
+        <input type="date" id="data-encontrado" required>
+
+        <label for="contato-encontrado">Contato:</label>
+        <input type="text" id="contato-encontrado" required>
+
+        <button type="submit">Cadastrar Item Encontrado</button>
+    </form>
+</section>
+
+<section>
+    <h2>Itens Perdidos</h2>
+    <p>Aqui aparecerão os itens perdidos cadastrados.</p>
+</section>
+
+<section>
+    <h2>Itens Encontrados</h2>
+    <p>Aqui aparecerão os itens encontrados cadastrados.</p>
+</section>
+
+<footer>
+    <p>&copy; 2024 Achados e Perdidos. Todos os direitos reservados.</p>
+</footer>
+
+</body>
+</html>
